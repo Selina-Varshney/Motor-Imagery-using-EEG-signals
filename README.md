@@ -15,7 +15,8 @@ EEG lab, a matlab tool has been used to convert .gdf files to .csv for efficent 
 By analysing the datasets, we labeled the training datasets with a ground truth value of 1,2,3,4 based on left arm, right arm, foot and tongue movement as given by EVENT.TYPE in the dataset.
 <br>
 We removed 0 and NA values from the csv files and applied baseline correction using EEG Lab.
-We then applied a bandwidth filter of 10-30Hz. These bands are particularly relevant when studying or classifying motor tasks, as they reflect brain activity related to motor control, movement planning, and execution. Filtering within this range helps remove irrelevant noise (like low-frequency drift and high-frequency artifacts) while retaining the key signals linked to motor function.
+We then applied a bandwidth filter of 10-30Hz. These bands are particularly relevant when studying or classifying motor tasks, as they reflect brain activity related to motor control, movement planning, and execution. 
+<br>
 ![image](https://github.com/user-attachments/assets/69651634-9c7c-4efc-96e9-c6a1898c70bd)
 
 <br>
