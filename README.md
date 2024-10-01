@@ -20,12 +20,15 @@ We then applied a bandwidth filter of 10-30Hz. These bands are particularly rele
 ![image](https://github.com/user-attachments/assets/69651634-9c7c-4efc-96e9-c6a1898c70bd)
 
 <br>
+<br>
 Even after applying a bandpass filter, there can still be residual noise or small fluctuations in the EEG data that affect signal clarity. The Savitzky-Golay (S-G) filter is applied because it provides additional smoothing without distorting the critical features of the signal, such as peaks and edges, which are important for analysis.
+
 ![image](https://github.com/user-attachments/assets/787f7795-ff33-48ad-bab3-7d04fbf6af0c)
 
 <br>
 Normalization and Standardization:
 since the data values are greater than 1 , it needs to be normalized.
+
 ![image](https://github.com/user-attachments/assets/1341f45b-e2fb-4d0a-a878-d9e3b8ce38ac)
 
 
