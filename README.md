@@ -6,6 +6,7 @@ This project aims to aid people with motor defects by using their brain EEG sign
 The dataset has been taken from https://www.bbci.de/competition/iv/
 <br> There are various datasets available as per the number of electrodes used in the EEG skull cap. For reference data for 22 channel has been provided in this repositiory.
 <br>
+<br>
 ![image](https://github.com/user-attachments/assets/174da9c0-db14-4956-bf71-730e0e7a7091)
 
 
