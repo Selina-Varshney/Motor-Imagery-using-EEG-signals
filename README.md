@@ -17,11 +17,14 @@ By analysing the datasets, we labeled the training datasets with a ground truth 
 We removed 0 and NA values from the csv files and applied baseline correction using EEG Lab.
 We then applied a bandwidth filter of 10-30Hz. These bands are particularly relevant when studying or classifying motor tasks, as they reflect brain activity related to motor control, movement planning, and execution. 
 <br>
+<br>
 ![image](https://github.com/user-attachments/assets/69651634-9c7c-4efc-96e9-c6a1898c70bd)
 
 <br>
-<br>
+
 Even after applying a bandpass filter, there can still be residual noise or small fluctuations in the EEG data that affect signal clarity. The Savitzky-Golay (S-G) filter is applied because it provides additional smoothing without distorting the critical features of the signal, such as peaks and edges, which are important for analysis.
+<br>
+<br>
 
 ![image](https://github.com/user-attachments/assets/787f7795-ff33-48ad-bab3-7d04fbf6af0c)
 
