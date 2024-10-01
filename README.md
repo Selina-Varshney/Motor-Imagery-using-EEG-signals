@@ -33,9 +33,10 @@ Normalization and Standardization:
 since the data values are greater than 1 , it needs to be normalized.
 <br>
 <br>
+
 ![image](https://github.com/user-attachments/assets/1341f45b-e2fb-4d0a-a878-d9e3b8ce38ac)
 
-#Spatial Features extraction
+We are now working to extract spatial temporal features from this dataset and fuse them together. Will be back as I progress!
 
 
 
