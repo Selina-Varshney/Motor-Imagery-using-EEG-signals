@@ -11,7 +11,7 @@ The dataset has been taken from https://www.bbci.de/competition/iv/
 
 
 # Data Preprocessing
-EEG lab, a matlab tool has been used to convert .gdf files to .csv for efficent usage. For example data for 22 channels will have 22 columns each representing data of each electrode.
+EEG lab, a matlab tool has been used to convert .gdf files to .csv for efficent usage. The columns represent the 22 electrodes placed all over the skull, while the rows represent the voltage at these electrodes over time.
 By analysing the datasets, we labeled the training datasets with a ground truth value of 1,2,3,4 based on left arm, right arm, foot and tongue movement as given by EVENT.TYPE in the dataset.
 <br>
 We removed 0 and NA values from the csv files and applied baseline correction using EEG Lab.
