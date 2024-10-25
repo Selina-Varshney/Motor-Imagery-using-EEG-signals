@@ -37,6 +37,9 @@ since the data values are greater than 1 , it needs to be normalized.
 ![image](https://github.com/user-attachments/assets/1341f45b-e2fb-4d0a-a878-d9e3b8ce38ac)
 
 We are now working to extract spatial temporal features from this dataset and fuse them together. 
+Proceeding further, we divided the data as per their ground label and we extracted temporal features using LSTM with skip connections, and spacial features using Residual connections. We then removed irrelevant features that displayed a lot of zero values.  We then mixed the ground labels for temporal and spacial data. Finally we fused the temporal and spacial data to have one file with mixed ground labels.
+
+We will now use this as an input to find out accuracy.
 
 
 
