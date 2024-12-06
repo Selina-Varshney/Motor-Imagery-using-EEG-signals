@@ -14,7 +14,7 @@ The dataset has been taken from https://www.bbci.de/competition/iv/
 EEG lab, a matlab tool has been used to convert .gdf files to .csv for efficent usage. The columns represent the 22 electrodes placed all over the skull, while the rows represent the voltage at these electrodes over time.
 By analysing the datasets, we labeled the training datasets with a ground truth value of 1,2,3,4 based on left arm, right arm, foot and tongue movement as given by EVENT.TYPE in the dataset.
 <br>
-We removed 0 and NA values from the csv files and applied baseline correction using EEG Lab.
+We removed 0 and NAN values from the csv files and applied baseline correction using EEG Lab.
 We then applied a bandwidth filter of 10-30Hz. These bands are particularly relevant when studying or classifying motor tasks, as they reflect brain activity related to motor control, movement planning, and execution. 
 <br>
 <br>
@@ -22,7 +22,12 @@ We then applied a bandwidth filter of 10-30Hz. These bands are particularly rele
 
 <br>
 
-Even after applying a bandpass filter, there can still be residual noise or small fluctuations in the EEG data that affect signal clarity. The Savitzky-Golay (S-G) filter is applied because it provides additional smoothing without distorting the critical features of the signal, such as peaks and edges, which are important for analysis.
+Even after applying a bandpass filter, there can still be residual noise or small fluctuations in the EEG data that affect signal clarity. The Savitzky-Golay (S-G) filter is applied because it provides additional smoothing without distorting the critical features of the signal, such as peaks and edges, which are important for analysis. In order to apply the savitzky golay filter, we needed to find the appropriate window for the critical channels - 8 C3, 10 Cz, 12 C4
+1) Code 1: We used Sgolay code 1 to find the window for each of the 3 channels
+2) Code 2: Out of the 3 windows we selected the one with minimum log dispersion
+3) Code 3: Applied savitzky golay for that window and polynomial factor of 3
+
+
 <br>
 <br>
 
