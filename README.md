@@ -28,10 +28,6 @@ Even after applying a bandpass filter, there can still be residual noise or smal
 3) Code 3: Applied savitzky golay for that window and polynomial factor of 3
    
 <br>
-We then applied zscore standardization and min-max normalization
-
-
-
 <br>
 <br>
 
@@ -39,8 +35,7 @@ We then applied zscore standardization and min-max normalization
 
 <br>
 Normalization and Standardization:
-since the data values are greater than 1 , it needs to be normalized.
-<br>
+We then applied zscore standardization and min-max normalization.
 <br>
 
 ![image](https://github.com/user-attachments/assets/1341f45b-e2fb-4d0a-a878-d9e3b8ce38ac)
