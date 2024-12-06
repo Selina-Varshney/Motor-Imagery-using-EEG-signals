@@ -35,6 +35,7 @@ Even after applying a bandpass filter, there can still be residual noise or smal
 
 <br>
 Normalization and Standardization:
+<br>
 We then applied zscore standardization and min-max normalization.
 <br>
 
