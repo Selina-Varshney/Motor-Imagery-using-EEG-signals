@@ -56,7 +56,8 @@ We then mixed the 4 extracted files for temporal and 4 extracted files for spaci
 Architecture Diagram:
 <br>
 <br>
-![WhatsApp Image 2024-10-26 at 11 40 21_52f85ab0](https://github.com/user-attachments/assets/84b838f6-5e0e-487f-be87-efa82518d450)
+![model_architecture](https://github.com/user-attachments/assets/125ff670-60e6-448b-90d4-f9b49ee5634c)
+
 
 
 # Accuracy
