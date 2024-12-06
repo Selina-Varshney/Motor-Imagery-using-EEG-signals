@@ -23,9 +23,13 @@ We then applied a bandwidth filter of 10-30Hz. These bands are particularly rele
 <br>
 
 Even after applying a bandpass filter, there can still be residual noise or small fluctuations in the EEG data that affect signal clarity. The Savitzky-Golay (S-G) filter is applied because it provides additional smoothing without distorting the critical features of the signal, such as peaks and edges, which are important for analysis. In order to apply the savitzky golay filter, we needed to find the appropriate window for the critical channels - 8 C3, 10 Cz, 12 C4
-1) Code 1: We used Sgolay code 1 to find the window for each of the 3 channels
-2) Code 2: Out of the 3 windows we selected the one with minimum log dispersion
+1) Code 1: To find the optimal window for each of the 3 channels
+2) Code 2: Out of the 3 optimal windows we selected the one with minimum log dispersion
 3) Code 3: Applied savitzky golay for that window and polynomial factor of 3
+   
+<br>
+We then applied zscore standardization and min-max normalization
+
 
 
 <br>
