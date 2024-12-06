@@ -3,8 +3,6 @@
 ## **Objective**  
 This project aims to assist individuals with motor impairments by analyzing their brain's EEG signals to predict intended body movements.  
 
----
-
 ## **Dataset**  
 The dataset has been sourced from [BBCI IV Competition](https://www.bbci.de/competition/iv/).  
 - Multiple datasets are available, varying by the number of electrodes used in the EEG skull cap.  
@@ -12,7 +10,6 @@ The dataset has been sourced from [BBCI IV Competition](https://www.bbci.de/comp
 
 ![image](https://github.com/user-attachments/assets/174da9c0-db14-4956-bf71-730e0e7a7091)
 
----
 
 ## **Data Preprocessing**  
 1. **File Conversion:**  
@@ -49,7 +46,6 @@ The dataset has been sourced from [BBCI IV Competition](https://www.bbci.de/comp
 
 ![image](https://github.com/user-attachments/assets/1341f45b-e2fb-4d0a-a878-d9e3b8ce38ac)
 
----
 
 ## **Feature Extraction**  
 
@@ -62,6 +58,7 @@ The dataset has been sourced from [BBCI IV Competition](https://www.bbci.de/comp
 - Irrelevant features with excessive zero values were removed.  
 
 **Architecture Diagram:**  
+
 ![cnn_model_architecture](https://github.com/user-attachments/assets/f2d786e3-e0ec-4362-9a7f-75ea88e3a2e7)
 
 ---
@@ -73,6 +70,7 @@ The dataset has been sourced from [BBCI IV Competition](https://www.bbci.de/comp
 - Final fusion was achieved using **Feature Pyramid Fusion**, followed by the removal of irrelevant columns.
 
 **Architecture Diagram:**  
+
 ![model_architecture](https://github.com/user-attachments/assets/125ff670-60e6-448b-90d4-f9b49ee5634c)
 
 ---
