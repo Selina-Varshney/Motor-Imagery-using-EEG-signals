@@ -38,13 +38,24 @@ Normalization and Standardization:
 <br>
 We then applied zscore standardization and min-max normalization.
 <br>
+<br>
 
 ![image](https://github.com/user-attachments/assets/1341f45b-e2fb-4d0a-a878-d9e3b8ce38ac)
+<br>
+# Temporal Features Extraction:
+The pre-processed data was then divided into 4 files- ground_truth 1,2,3,4 as per their ground truth values.
+For each of these files, blocks of 500 rows were created and temporal features were extracted using LSTM with skip connections.
 
-We are now working to extract spatial temporal features from this dataset and fuse them together. 
-Proceeding further, we divided the data as per their ground label and we extracted temporal features using LSTM with skip connections, and spacial features using Residual connections. We then removed irrelevant features that displayed a lot of zero values.  We then mixed the ground labels for temporal and spacial data. Finally we fused the temporal and spacial data to have one file with mixed ground labels using feature pyramid fusion.
+# Spacial Features Extraction:
+For each of the files, blocks of 500 rows were created and spacial features were extracted using Residual Connections.
+We then removed irrelevant features that displayed a lot of zero values.  
 
-We will now use this as an input to find out accuracy.
+# Fusion
+We then mixed the 4 extracted files for temporal and 4 extracted files for spacial data to create 2 files, Temporal_mixed and Spacial_mixed which has shuffled ground truth labels. Finally we fused the temporal and spacial data using feature pyramid fusion. Further, irrelevant columns with zero values were removed.
+
+# Accuracy
+We will now use this as an input to find out accuracy. After using multiple methods, we used Inception-based CNN using 5-fold cross-validation for classification. The model utilizes Inception modules for feature extraction and evaluates performance on each fold, reporting average accuracy and loss. An accuracy of 88% was found using this model for 22 channel data
+
 
 
 
