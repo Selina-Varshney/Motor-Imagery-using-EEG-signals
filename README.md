@@ -53,6 +53,12 @@ We then removed irrelevant features that displayed a lot of zero values.
 # Fusion
 We then mixed the 4 extracted files for temporal and 4 extracted files for spacial data to create 2 files, Temporal_mixed and Spacial_mixed which has shuffled ground truth labels. Finally we fused the temporal and spacial data using feature pyramid fusion. Further, irrelevant columns with zero values were removed.
 
+Architecture Diagram:
+<br>
+<br>
+![WhatsApp Image 2024-10-26 at 11 40 21_52f85ab0](https://github.com/user-attachments/assets/84b838f6-5e0e-487f-be87-efa82518d450)
+
+
 # Accuracy
 We will now use this as an input to find out accuracy. After using multiple methods, we used Inception-based CNN using 5-fold cross-validation for classification. The model utilizes Inception modules for feature extraction and evaluates performance on each fold, reporting average accuracy and loss. An accuracy of 80% was found using this model for 22 channel data.
 <br>
